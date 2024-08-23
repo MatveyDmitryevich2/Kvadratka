@@ -55,9 +55,9 @@ int Testator (struct TestDannih test_dannih)
 
 void Proverator (void)
 {
-const int Kolichestvo_testov = 10;
-struct TestDannih Massiv_testov[Kolichestvo_testov] = {
-    {3,  6,  -24,  2,  -4, DVA_reshenia},
+
+struct TestDannih Massiv_testov[] = {
+    {3,  6,  -24,  -4,  2, DVA_reshenia},
     {1, -4,    4,  2,   2, ODNO_reshenie},
     {1, -2,   -3,  3,  -1, DVA_reshenia},
     {1, -5,    6,  3,   2, DVA_reshenia},
@@ -69,6 +69,7 @@ struct TestDannih Massiv_testov[Kolichestvo_testov] = {
     {1,  0,  -16,  4,  -4, DVA_reshenia},
 };
 
+    const int Kolichestvo_testov = sizeof(Massiv_testov)/sizeof(Massiv_testov[0]);
     for(int i = 0; i < Kolichestvo_testov; i++)
         Testator( Massiv_testov[i] );
 }
@@ -81,3 +82,4 @@ void Peremenator(double *a, double *b)
     *a = *b;
     *b = c;
 }
+ 
