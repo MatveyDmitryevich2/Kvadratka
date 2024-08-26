@@ -51,13 +51,11 @@ int Testator (struct TestDannih test_dannih)
     return Rezultat;
 }
 
-
-
 void Proverator (void)
 {
 
 struct TestDannih Massiv_testov[] = {
-    {3,  6,  -24,  -4,  2, DVA_reshenia},
+    {3,  6,  -24, -4,  2, DVA_reshenia},
     {1, -4,    4,  2,   2, ODNO_reshenie},
     {1, -2,   -3,  3,  -1, DVA_reshenia},
     {1, -5,    6,  3,   2, DVA_reshenia},
