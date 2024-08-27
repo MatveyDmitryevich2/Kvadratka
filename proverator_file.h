@@ -18,18 +18,19 @@ struct TestDannih
  * Используеться для тестрирования функции Reshator()
  */ 
 
-void Proverator (void);
+void Proverator(void);
 
 /**
  * @brief Тестирует функцию Reshator()
  * 
  * @param struct TestDannih
  * 
+ * @return возвращает результат тестирования: 1 или 0, соответсвенно правильные рузультаты или нет.
+ * 
  * Функция Testator() принимает значения из структры struct TestDannih и сравнивает их со значениями, котрые
  * были посчиатнны программой. 
- * Она возвращает результат тестирования: 1 или 0, соответсвенно правильные рузультаты или нет
  */ 
 
-int Testator (struct TestDannih test_dannih);
+int Testator(struct TestDannih test_dannih);
 
 #endif // PROVERATOR_FILE_H

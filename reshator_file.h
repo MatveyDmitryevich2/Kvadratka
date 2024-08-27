@@ -20,7 +20,9 @@ enum NRoots
  * @param reshenie_x1 одно из возможных решений квадратного уравнения
  * @param reshenie_x2 одно из возможных решений квадратного уравнения
  * 
- * Функция Reshator() принимает коэффициенты квадраного уравнеиния и решает его. Возвращает ответы и коэффициенты.
+ * @return возвращает ответы reshenie_x1 и  reshenie_x2 и коэффициенты a, b, c.
+ * 
+ * Функция Reshator() принимает коэффициенты квадраного уравнеиния и решает его.
  * 
  */ 
 enum NRoots Reshator(double koaf_a, double koaf_b, double koaf_c, double *reshenie_x1, double *reshenie_x2);
@@ -33,11 +35,12 @@ enum NRoots Reshator(double koaf_a, double koaf_b, double koaf_c, double *reshen
  * @param reshenie_x1 одно из возможных решений квадратного уравнения
  * @param reshenie_x2 одно из возможных решений квадратного уравнения
  * 
+ * @return возвращает его решение, а также значение перменной kolichestvo_resheniy.
+ * 
  * Функция R_Lineynie() принимает коэффициенты b и c, и решает линейное уравнине. 
- * Она возвращает его решение, а также значение перменной kolichestvo_resheniy.
  */ 
 
-enum NRoots R_Lineynie (double koaf_b, double koaf_c, double *reshenie_x1, double *reshenie_x2);
+enum NRoots R_Lineynie(double koaf_b, double koaf_c, double *reshenie_x1, double *reshenie_x2);
 
 /**
  * @brief Случай решения квадратного уравнения
@@ -48,10 +51,12 @@ enum NRoots R_Lineynie (double koaf_b, double koaf_c, double *reshenie_x1, doubl
  * @param reshenie_x1 одно из возможных решений квадратного уравнения
  * @param reshenie_x2 одно из возможных решений квадратного уравнения
  * 
+ * @return возвращает его решения, а также их количество с помощью return.
+ * 
  * Функция R_Kvadraine() принимает коэффициенты a, b и c, и решает квадратное уравнине, рассматривая 
- * три возможных исхода. Она возвращает его решения, а также их количество с помощью return
+ * три возможных исхода.
  */ 
 
-enum NRoots R_Kvadraine (double koaf_a, double koaf_b, double koaf_c, double *reshenie_x1, double *reshenie_x2);
+enum NRoots R_Kvadraine(double koaf_a, double koaf_b, double koaf_c, double *reshenie_x1, double *reshenie_x2);
 
  #endif // RESHATOR_FILE_H
